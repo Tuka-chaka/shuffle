@@ -8,6 +8,7 @@ export default async function Home() {
   
   return (
     <div className={styles.page}>
+      <h1 className={styles.appName}>SHUFFLE</h1>
       <CardList songs={songs}/>
     </div>
   );

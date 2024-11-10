@@ -1,3 +1,9 @@
 .page {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.appName {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
