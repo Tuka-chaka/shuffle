@@ -15,6 +15,9 @@
 
 .songTitle {
     max-width: 80%;
+    min-width: max-content;
+    text-wrap: balance;
+    text-align: center;
 }
 
 .iconWrapper {

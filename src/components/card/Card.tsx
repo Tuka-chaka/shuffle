@@ -8,7 +8,7 @@ interface CardProps {
     icon: ReactNode
 }
 
-const Card: React.FunctionComponent<CardProps> = ({name, songTitle, icon} : CardProps) => {
+const Card = ({name, songTitle, icon} : CardProps) => {
   return (
     <div className={styles.card}>
         <div className={styles.cardInfo}>
