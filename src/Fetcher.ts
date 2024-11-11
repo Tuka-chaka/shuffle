@@ -6,10 +6,8 @@ const getSong = async  () => {
           throw new Error(`Response status: ${response.status}`);
         }
         const json = await response.json();
-        console.log(json)
         return(json);
-      } catch (error) {
-        console.log(error)
+      } catch {
         return(getSong());
       }
     
@@ -21,7 +19,6 @@ const getSongs = async() => {
         songs.push(getSong())
     }
     const result = await Promise.all(songs)
-    console.log(result)
     return result.map(res => res.response.song.full_title.replaceAll('\xa0', ' '))
 }
 

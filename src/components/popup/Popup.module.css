@@ -1,0 +1,37 @@
+.popup {
+    user-select: none;
+    z-index: 1;
+    width: 200px;
+    height: 70px;
+    padding-top: 25px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
+    background-color: #3e3e3e;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, left 0.3s ease, bottom 0.3s ease;
+    color: #d3d3d3;
+    box-shadow: 0 0 3px 5px #3e3e3e;
+}
+
+.invisible {
+    opacity: 0;
+    visibility: 0;
+    left: -220px;
+}
+
+@media (max-width: 500px) {
+    .popup {
+        width: calc(100% - 40px);
+        bottom: 20px;
+        left: 20px;
+        top: auto;
+    }
+
+    .invisible {
+        left: 20px;
+        bottom: -100px;
+    }
+}
